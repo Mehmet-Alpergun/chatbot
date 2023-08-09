@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Document</title>
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <button class="chatbot-toggler">
+      <span class="material-symbol-outlined">
+        <i class="fa-regular fa-message"></i
+      ></span>
+      <span class="material-symbol-outlined">
+        <i class="fa-solid fa-xmark"></i
+      ></span>
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>Chatbot</h2>
+        <span class="close-btn material-symbol-outlined">
+          <i class="fa-solid fa-xmark"></i
+        ></span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <i id="robot" class="fa-solid fa-robot"></i>
+          <p>
+            Hi there <br />
+            How can I help you?
+          </p>
+          <!-- <span class="material-symbol-outlined"> smart_toy</span> -->
+        </li>
+        <li class="chat outgoing">
+          <!-- <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi.
+          </p> -->
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Enter an message" required></textarea>
+        <span id="send-btn"><i class="fa-solid fa-play"></i></span>
+      </div>
+    </div>
+  </body>
+</html>
